@@ -1,27 +1,12 @@
-###############################################################################################################
-# COPYRIGHT (C) WLUPER LTD. - ALL RIGHTS RESERVED 2017 - Present
-#
-# UNAUTHORIZED COPYING, USE, REPRODUCTION OR DISTRIBUTION OF THIS FILE, VIA ANY MEDIUM IS STRICTLY PROHIBITED.
-# ALL CONTENTS ARE PROPRIETARY AND CONFIDENTIAL.
-#
-# WRITTEN BY:
-#   Mohammed Terry-Jack <mohammed@wluper.com>
-#
-# GENERAL ENQUIRIES:
-#   <contact@wluper.com>
-###############################################################################################################
-# >>>> Python Native Imports <<<<
 from string import punctuation
 from typing import Tuple, List
-# >>>> Installed Package Imports <<<<
 from num2words import num2words
 from wordninja import split
 from unidecode import unidecode
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk import pos_tag
-# >>>> Wluper Imports <<<<
-# ==============================================================================================================
+
 def preprocessing_pipeline(raw_string:str) -> str:
     """
     raw string: “Prease get me 2 London ,,, Bridge” 
